@@ -3,33 +3,6 @@
   min-height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 60vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: rgb(40, 40, 40);
-  padding-top: calc(25px + 10vmin);
-  height: 32vmin;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 4vmin);
-  color: white;
-}
-
-p {
-  font-size: calc(10px + 4vmin);
-  font-weight: bold;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   0% {
     transform: rotate(0deg);
