@@ -24,12 +24,28 @@ export default function HomePage(props) {
     }
 
     .about {
-      background: rgb(230, 230, 230);
+      background: rgb(219, 200, 191);
       height: 700px;
-      margin: 0;
+      margin-top: 0;
+      padding: 10px;
+      color: rgb(30, 30, 30);
+
       h2 {
-        margin: 0;
-        text-decoration: underline;
+        width: 50%;
+        font-size: calc(18px + 3vmin);
+      }
+
+      p {
+        font-size: calc(12px + 1vmin);
+        margin-left: 30%;
+        width: 60%;
+        /* max-width: 600px; */
+        line-height: calc(12px + 1.5vmin);
+      }
+
+      h3 {
+        width: 55%;
+        font-size: calc(5px + 2vmin);
       }
     }
   `;
@@ -41,7 +57,24 @@ export default function HomePage(props) {
         <img src={headlineImage} alt="headline snake" />
       </div>
       <div className="about">
-        <h2>About Us</h2>
+        <h2>About Us:</h2>
+        <p>We breed and sell carpet pythons!</p>
+
+        <p>
+          After taking in our first carpet python, we quickly fell in love with
+          the species. We would go to local shops and reptile expos and noticed
+          there would always be lots of ball pythons, boas, and geckos... but
+          rarely would we find carpet pythons! On the rare occasion that we did,
+          the person selling it would generally not be the person who had bred
+          the animal or known the parents and would not have much information
+          about the snake that was for sale.
+        </p>
+        <p>
+          With a desire to share this awesome species with the reptile
+          enthusiasts around us (and with a continuously expanding collection of
+          animals reaching breeding age) we eventually decided to start AnB
+          Reptiles in 2017!
+        </p>
       </div>
     </Home>
   );

@@ -4,7 +4,7 @@ import logo from "../images/logos/logo_small_white.png";
 
 export default function Header(props) {
   const StyledHeader = styled.div`
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(20, 20, 20);
     padding-top: calc(25px + 10vmin);
     height: 32vmin;
     display: flex;
