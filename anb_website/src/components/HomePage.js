@@ -15,14 +15,19 @@ export default function HomePage(props) {
         width: 100%;
       }
       p {
-        width: 20%;
-        max-width: 300px;
+        width: 35%;
+        max-width: 350px;
         color: rgb(219, 200, 191);
+        border-radius: 15px;
         font-size: calc(10px + 4vmin);
         font-weight: bold;
         position: absolute;
-        top: 10%;
-        right: 10%;
+        top: 7vw;
+        left: 55%;
+        right: 0;
+        margin: auto;
+        background: rgba(25, 25, 25, 0.7);
+        padding: 10px 5px;
       }
     }
 
