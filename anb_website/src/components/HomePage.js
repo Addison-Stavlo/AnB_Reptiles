@@ -25,14 +25,16 @@ export default function HomePage(props) {
 
     .about {
       background: rgb(219, 200, 191);
-      height: 700px;
-      margin-top: 0;
+      /* height: 700px; */
       padding: 10px;
+      padding-top: calc(5px + 3vmin);
+      padding-bottom: calc(15px + 5vw);
       color: rgb(30, 30, 30);
 
       h2 {
         width: 50%;
         font-size: calc(18px + 3vmin);
+        /* padding-top: calc(5px + 3vmin); */
       }
 
       p {
@@ -58,7 +60,10 @@ export default function HomePage(props) {
       </div>
       <div className="about">
         <h2>About Us:</h2>
-        <p>We breed and sell carpet pythons!</p>
+        <p>
+          We breed and sell carpet pythons! <br /> We are local to Rochester NY,
+          but we ship nationwide!
+        </p>
 
         <p>
           After taking in our first carpet python, we quickly fell in love with

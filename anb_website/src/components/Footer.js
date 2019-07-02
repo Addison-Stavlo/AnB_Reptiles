@@ -4,11 +4,18 @@ import styled from "styled-components";
 export default function Footer(props) {
   const FooterBox = styled.div`
     color: rgb(230, 230, 230);
+    h2 {
+      /* width: 50%; */
+      font-size: calc(16px + 2vmin);
+      padding-top: calc(5px + 3vmin);
+    }
+
     .snap-widget-holder {
       max-width: 100vw;
       padding: 1px;
     }
   `;
+
   return (
     <FooterBox>
       <h2>Some Pretty Pictures!</h2>
