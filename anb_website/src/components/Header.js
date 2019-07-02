@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../images/logos/logo_small_white.png";
+import fb_logo from "../images/logos/social_media/facebook_white.png";
+import insta_logo from "../images/logos/social_media/instagram_white.png";
+
 import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
@@ -15,21 +18,43 @@ export default function Header(props) {
       /* flex-direction: column; */
       align-items: center;
       justify-content: center;
-      font-size: calc(10px + 4vmin);
+
       color: white;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
 
-      img {
+      .social {
+        height: calc(30px + 2vmin);
+        position: fixed;
+        top: calc(10px + 1vmin);
+        cursor: pointer;
+
+        img {
+          animation: App-logo-spin infinite 3s linear;
+        }
+        &:hover {
+          height: calc(40px + 2vmin);
+        }
+      }
+
+      .fb_logo {
+        right: calc(20px + 5vw);
+      }
+      .insta_logo {
+        left: calc(20px + 5vw);
+      }
+
+      .anb_logo {
         animation: App-logo-spin infinite 5s linear;
         height: 40vmin;
-        pointer-events: none;
       }
 
       a {
         text-decoration: none;
+        color: white;
+        font-size: calc(10px + 2vmin);
       }
 
       .active {
@@ -40,10 +65,25 @@ export default function Header(props) {
   return (
     <StyledHeader>
       <div>
+        <a
+          className="social insta_logo"
+          href="https://www.instagram.com/anb_reptiles/"
+          target="_blank"
+        >
+          <img className="social insta_logo" src={insta_logo} alt="instagram" />
+        </a>
+        <a
+          className="social insta_logo"
+          href="https://www.facebook.com/AnBReptiles/"
+          target="_blank"
+        >
+          <img className="social fb_logo" src={fb_logo} alt="facebook" />
+        </a>
         <NavLink exact to="/">
           Home
         </NavLink>
-        <img src={logo} alt="logo" />
+
+        <img src={logo} alt="logo" className="anb_logo" />
         <NavLink to="/animals">Available</NavLink>
       </div>
     </StyledHeader>

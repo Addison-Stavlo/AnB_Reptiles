@@ -28,7 +28,7 @@ export default function HomePage(props) {
 
     .about {
       background: rgb(219, 200, 191);
-      /* height: 700px; */
+      /* background: white; */
       padding: 10px;
       padding-top: calc(5px + 3vmin);
       padding-bottom: calc(15px + 5vw);
@@ -37,14 +37,12 @@ export default function HomePage(props) {
       h2 {
         width: 50%;
         font-size: calc(18px + 3vmin);
-        /* padding-top: calc(5px + 3vmin); */
       }
 
       p {
         font-size: calc(12px + 1vmin);
         margin-left: 30%;
         width: 60%;
-        /* max-width: 600px; */
         line-height: calc(12px + 1.5vmin);
       }
 
