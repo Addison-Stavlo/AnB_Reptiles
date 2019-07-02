@@ -1,0 +1,26 @@
+body {
+  background: rgb(20, 20, 20);
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
