@@ -1,31 +1,39 @@
 import React from "react";
 import styled from "styled-components";
-import headlineImage from "../images/snakes/AnB_Snek3.jpg";
+import headlineImage from "../images/snakes/blossoms_and_snake.jpg";
 
 export default function HomePage(props) {
   const Home = styled.div`
     .headline {
       position: relative;
       width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
 
       img {
         z-index: -1;
         width: 100%;
       }
       p {
-        width: 80%;
-        color: rgb(230, 230, 230);
+        width: 35%;
+        max-width: 350px;
+        color: rgb(219, 200, 191);
+        border-radius: 15px;
         font-size: calc(10px + 4vmin);
         font-weight: bold;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 7vw;
+        left: 55%;
+        right: 0;
+        margin: auto;
+        background: rgba(25, 25, 25, 0.7);
+        padding: 10px 5px;
       }
     }
 
     .about {
       background: rgb(219, 200, 191);
-      /* height: 700px; */
+      /* background: white; */
       padding: 10px;
       padding-top: calc(5px + 3vmin);
       padding-bottom: calc(15px + 5vw);
@@ -34,14 +42,12 @@ export default function HomePage(props) {
       h2 {
         width: 50%;
         font-size: calc(18px + 3vmin);
-        /* padding-top: calc(5px + 3vmin); */
       }
 
       p {
         font-size: calc(12px + 1vmin);
         margin-left: 30%;
         width: 60%;
-        /* max-width: 600px; */
         line-height: calc(12px + 1.5vmin);
       }
 
@@ -55,7 +61,7 @@ export default function HomePage(props) {
   return (
     <Home>
       <div className="headline">
-        <p>Welcome to our Page! </p>
+        <p>Welcome to our Homepage!</p>
         <img src={headlineImage} alt="headline snake" />
       </div>
       <div className="about">

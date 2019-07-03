@@ -14,12 +14,22 @@ export default function Footer(props) {
       max-width: 100vw;
       padding: 1px;
     }
+
+    a {
+      color: white;
+    }
   `;
 
   return (
     <FooterBox>
       <h2>Some Pretty Pictures!</h2>
-      <p>See more at our Instagram.</p>
+      <p>
+        See more at our{" "}
+        <a href="https://www.instagram.com/anb_reptiles/" target="_blank">
+          Instagram
+        </a>
+        .
+      </p>
       <div className="snap-widget-holder">
         <iframe
           src="https://snapwidget.com/embed/708941"
