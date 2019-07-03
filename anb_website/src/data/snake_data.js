@@ -15,10 +15,11 @@ class Snake {
 }
 
 class SaleItem extends Snake {
-  constructor(src, type, dob, sex, price, parents) {
+  constructor(src, type, dob, sex, price, parents, animalID) {
     super(src, type, dob, sex);
     this.price = price;
     this.parents = parents;
+    this.animalID = animalID;
   }
 }
 
@@ -45,7 +46,8 @@ const papuan1 = new SaleItem(
   "2018-4-2",
   "M",
   250,
-  [papuan_dam, papuan_sire]
+  [papuan_dam, papuan_sire],
+  "P-A5"
 );
 
 const jungle1 = new SaleItem(
@@ -54,7 +56,8 @@ const jungle1 = new SaleItem(
   "2018-4-10",
   "M",
   200,
-  [picky, donk]
+  [picky, donk],
+  "J-C8"
 );
 
 const saleItems = [papuan1, jungle1];
