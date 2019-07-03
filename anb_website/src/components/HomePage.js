@@ -3,6 +3,10 @@ import styled from "styled-components";
 import headlineImage from "../images/snakes/blossoms_and_snake.jpg";
 
 export default function HomePage(props) {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const Home = styled.div`
     .headline {
       position: relative;
@@ -17,7 +21,8 @@ export default function HomePage(props) {
       p {
         width: 35%;
         max-width: 350px;
-        color: rgb(219, 200, 191);
+        /* color: rgb(219, 200, 191); */
+        color: white;
         border-radius: 15px;
         font-size: calc(10px + 4vmin);
         font-weight: bold;
@@ -32,8 +37,7 @@ export default function HomePage(props) {
     }
 
     .about {
-      background: rgb(219, 200, 191);
-      /* background: white; */
+      background: white;
       padding: 10px;
       padding-top: calc(5px + 3vmin);
       padding-bottom: calc(15px + 5vw);
