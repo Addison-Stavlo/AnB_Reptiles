@@ -8,12 +8,12 @@ import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
   const StyledHeader = styled.div`
-    margin-bottom: 30vmin;
+    margin-bottom: 15vmin;
     div {
       z-index: 1;
       background-color: rgb(20, 20, 20);
-      padding-top: calc(15px + 8vmin);
-      height: 20vmin;
+      padding-top: calc(15px + 4vmin);
+      height: 10vmin;
       display: flex;
       /* flex-direction: column; */
       align-items: center;
@@ -26,16 +26,16 @@ export default function Header(props) {
       width: 100%;
 
       .social {
-        height: calc(30px + 2vmin);
+        height: calc(30px + 1vmin);
         position: fixed;
         top: calc(10px + 1vmin);
         cursor: pointer;
 
         img {
-          animation: App-logo-spin infinite 3s linear;
+          /* animation: App-logo-spin infinite 5s linear; */
         }
         &:hover {
-          height: calc(40px + 2vmin);
+          height: calc(30px + 2vmin);
         }
       }
 
@@ -47,8 +47,8 @@ export default function Header(props) {
       }
 
       .anb_logo {
-        animation: App-logo-spin infinite 5s linear;
-        height: 40vmin;
+        animation: logo-fade-in 5s linear;
+        height: 20vmin;
       }
 
       a {
@@ -84,7 +84,7 @@ export default function Header(props) {
         </NavLink>
 
         <img src={logo} alt="logo" className="anb_logo" />
-        <NavLink to="/animals">Available</NavLink>
+        <NavLink to="/shop">Shop</NavLink>
       </div>
     </StyledHeader>
   );

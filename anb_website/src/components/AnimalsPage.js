@@ -9,7 +9,7 @@ export default function AnimalsPage(props) {
   }, []);
 
   const PageHolder = styled.div`
-    background: white;
+    background: #d1d4c7;
 
     .sales-note {
       h2 {
@@ -33,7 +33,7 @@ export default function AnimalsPage(props) {
     .sales-shelf {
       margin: 0 auto;
       width: 90%;
-      max-width: 1300px;
+      max-width: 1400px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
