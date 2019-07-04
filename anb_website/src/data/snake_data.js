@@ -1,5 +1,7 @@
 import papuan1_img from "../images/snakes/postings/papuan1.jpg";
 import jungle1_img from "../images/snakes/postings/jungle1.JPG";
+import papuan2_img from "../images/snakes/postings/papuan2.JPG";
+import jungle2_img from "../images/snakes/postings/jungle2.JPG";
 import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam1.jpg";
 import papuan_sire_img from "../images/snakes/postings/parents/papuan_sire.jpg";
 import picky_img from "../images/snakes/postings/parents/picky.jpg";
@@ -50,6 +52,16 @@ const papuan1 = new SaleItem(
   "P-A5"
 );
 
+const papuan2 = new SaleItem(
+  papuan2_img,
+  "Papuan Carpet Python",
+  "2018-4-2",
+  "M",
+  250,
+  [papuan_dam, papuan_sire],
+  "P-A3"
+);
+
 const jungle1 = new SaleItem(
   jungle1_img,
   "Jungle Carpet Python",
@@ -60,6 +72,16 @@ const jungle1 = new SaleItem(
   "J-C8"
 );
 
-const saleItems = [papuan1, jungle1];
+const jungle2 = new SaleItem(
+  jungle2_img,
+  "Jungle Carpet Python",
+  "2018-4-10",
+  "M",
+  200,
+  [picky, donk],
+  "J-C8"
+);
+
+const saleItems = [papuan1, papuan2, jungle1, jungle2];
 
 export default saleItems;

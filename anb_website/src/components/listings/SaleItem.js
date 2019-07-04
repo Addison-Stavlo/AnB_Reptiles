@@ -1,27 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 export default function SaleItem(props) {
   const { src, type, dob, sex, price, parents, animalID } = props.animal;
 
   const SaleCard = styled.div`
-    width: 300px;
+    /* width: 300px; */
     /* height: 500px; */
-    background: rgba(25, 25, 25, 0.8);
+    background: rgba(25, 25, 25, 0.9);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
     color: white;
+    /* box-sizing: border-box; */
 
     img {
-      max-height: 200px;
-      max-width: 250px;
+      max-height: 280px;
+      max-width: 280px;
       border-radius: 5px;
     }
 
     h1 {
       font-size: 22px;
+      padding-top: 10px;
     }
 
     h3 {
@@ -29,7 +31,12 @@ export default function SaleItem(props) {
       font-weight: normal;
       text-align: left;
       margin: 10px auto;
-      width: 70%;
+      width: 99%;
+    }
+
+    .view-more {
+      text-decoration: underline;
+      cursor: pointer;
     }
 
     a {
@@ -61,7 +68,8 @@ export default function SaleItem(props) {
       <h3>Date Hatched: {dob}</h3>
       <h3>Sex: {sex}</h3>
       <h3>${price} + shipping</h3>
-      <h3>View Parent Info</h3>
+      <h3 className="view-more">View More Photos</h3>
+      <h3 className="view-more">View Parent Info</h3>
       <a href="http://m.me/AnBReptiles" target="_blank">
         Interested? <br /> Message Us on Facebook
       </a>

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import headlineImage from "../images/snakes/blossoms_and_snake.jpg";
+import Carousel from "../components/carousel/Carousel";
+import peoplePics from "../data/about_images";
 
 export default function HomePage(props) {
   React.useEffect(() => {
@@ -17,6 +19,7 @@ export default function HomePage(props) {
       img {
         z-index: -1;
         width: 100%;
+        border-radius: 10px;
       }
       p {
         width: 35%;
@@ -27,37 +30,52 @@ export default function HomePage(props) {
         font-size: calc(10px + 4vmin);
         font-weight: bold;
         position: absolute;
-        top: 7vw;
-        left: 55%;
-        right: 0;
+        bottom: 2vw;
+        right: 2vw;
         margin: auto;
-        background: rgba(25, 25, 25, 0.7);
+        /* background: rgba(25, 25, 25, 0.7); */
         padding: 10px 5px;
       }
     }
 
     .about {
-      background: white;
-      padding: 10px;
-      padding-top: calc(5px + 3vmin);
-      padding-bottom: calc(15px + 5vw);
-      color: rgb(30, 30, 30);
+      background: #d1d4c7;
+      padding: 30px;
+      /* padding-top: calc(5px + 3vmin); */
+      /* padding-bottom: calc(15px + 5vw); */
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
 
-      h2 {
-        width: 50%;
-        font-size: calc(18px + 3vmin);
-      }
-
-      p {
-        font-size: calc(12px + 1vmin);
-        margin-left: 30%;
-        width: 60%;
-        line-height: calc(12px + 1.5vmin);
-      }
-
-      h3 {
+      .about-text {
+        color: rgb(30, 30, 30);
+        text-align: left;
         width: 55%;
-        font-size: calc(5px + 2vmin);
+        max-width: 800px;
+
+        @media (max-width: 700px) {
+          width: 90%;
+          text-align: center;
+        }
+        h2 {
+          /* width: 60%; */
+          margin-left: 2vw;
+          font-size: calc(18px + 3vmin);
+        }
+
+        p {
+          font-size: calc(12px + 1vmin);
+          /* margin-left: 2vw; */
+          /* width: 50%; */
+
+          line-height: calc(12px + 1.5vmin);
+          padding: 10px 0;
+        }
+      }
+
+      .carousel-holder {
+        height: 600px;
       }
     }
   `;
@@ -69,27 +87,32 @@ export default function HomePage(props) {
         <img src={headlineImage} alt="headline snake" />
       </div>
       <div className="about">
-        <h2>About Us:</h2>
-        <p>
-          We breed and sell carpet pythons! <br /> We are local to Rochester NY,
-          but we ship nationwide!
-        </p>
+        <div className="about-text">
+          <h2>About Us:</h2>
+          <p>
+            We breed and sell carpet pythons! <br /> We are local to Rochester
+            NY, but we ship nationwide!
+          </p>
 
-        <p>
-          After taking in our first carpet python, we quickly fell in love with
-          the species. We would go to local shops and reptile expos and noticed
-          there would always be lots of ball pythons, boas, and geckos... but
-          rarely would we find carpet pythons! On the rare occasion that we did,
-          the person selling it would generally not be the person who had bred
-          the animal or known the parents and would not have much information
-          about the snake that was for sale.
-        </p>
-        <p>
-          With a desire to share this awesome species with the reptile
-          enthusiasts around us (and with a continuously expanding collection of
-          animals reaching breeding age) we eventually decided to start AnB
-          Reptiles in 2017!
-        </p>
+          <p>
+            After taking in our first carpet python, we quickly fell in love
+            with the species. We would go to local shops and reptile expos and
+            noticed there would always be lots of ball pythons, boas, and
+            geckos... but rarely would we find carpet pythons! On the rare
+            occasion that we did, the person selling it would generally not be
+            the person who had bred the animal or known the parents and would
+            not have much information about the snake that was for sale.
+          </p>
+          <p>
+            With a desire to share this awesome species with the reptile
+            enthusiasts around us (and with a continuously expanding collection
+            of animals reaching breeding age) we eventually decided to start AnB
+            Reptiles in 2017!
+          </p>
+        </div>
+        <div className="carousel-holder">
+          <Carousel images={peoplePics} />
+        </div>
       </div>
     </Home>
   );
