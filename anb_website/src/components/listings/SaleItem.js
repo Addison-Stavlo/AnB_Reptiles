@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 // import { Button } from "react-bootstrap";
+import ExpandedView from "./ExpandedView";
 
 export default function SaleItem(props) {
   const { src, type, dob, sex, price, parents, animalID } = props.animal;
+
+  const [expanded, setExpanded] = React.useState(false);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
 
   const SaleCard = styled.div`
     /* width: 300px; */
@@ -13,6 +20,7 @@ export default function SaleItem(props) {
     padding: 20px;
     margin: 5px;
     color: white;
+    cursor: pointer;
     /* box-sizing: border-box; */
 
     img {
@@ -61,7 +69,7 @@ export default function SaleItem(props) {
     }
   `;
   return (
-    <SaleCard>
+    <SaleCard onClick={toggleExpanded}>
       <img src={src} />
       <h1>{type}</h1>
       <h3>ID: {animalID}</h3>
@@ -73,6 +81,9 @@ export default function SaleItem(props) {
       <a href="http://m.me/AnBReptiles" target="_blank">
         Interested? <br /> Message Us on Facebook
       </a>
+      {expanded ? (
+        <ExpandedView animal={props.animal} toggleExpanded={toggleExpanded} />
+      ) : null}
     </SaleCard>
   );
 }
