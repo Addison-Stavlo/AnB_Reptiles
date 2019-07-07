@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 // import { Button } from "react-bootstrap";
 import ExpandedView from "./ExpandedView";
+import { withRouter } from "react-router-dom";
 
-export default function SaleItem(props) {
+function SaleItem(props) {
   const { src, type, dob, sex, price, parents, animalID } = props.animal;
 
   const [expanded, setExpanded] = React.useState(false);
@@ -69,7 +70,7 @@ export default function SaleItem(props) {
     }
   `;
   return (
-    <SaleCard onClick={toggleExpanded}>
+    <SaleCard onClick={() => props.history.push(`/shop/${props.index}`)}>
       <img src={src} />
       <h1>{type}</h1>
       <h3>ID: {animalID}</h3>
@@ -87,3 +88,5 @@ export default function SaleItem(props) {
     </SaleCard>
   );
 }
+
+export default withRouter(SaleItem);
