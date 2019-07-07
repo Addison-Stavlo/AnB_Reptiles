@@ -3,6 +3,7 @@ import styled from "styled-components";
 import headlineImage from "../images/snakes/blossoms_and_snake.jpg";
 import Carousel from "../components/carousel/Carousel";
 import peoplePics from "../data/about_images";
+import snakePics from "../data/snake_carousel";
 
 export default function HomePage(props) {
   React.useEffect(() => {
@@ -77,6 +78,10 @@ export default function HomePage(props) {
       .carousel-holder {
         height: 600px;
       }
+
+      .snake-carousel {
+        height: 300px;
+      }
     }
   `;
 
@@ -112,6 +117,22 @@ export default function HomePage(props) {
         </div>
         <div className="carousel-holder">
           <Carousel images={peoplePics} />
+        </div>
+      </div>
+      <div className="about">
+        <div className="carousel-holder snake-carousel">
+          <Carousel images={snakePics} />
+        </div>
+        <div className="about-text">
+          <p>
+            After taking in our first carpet python, we quickly fell in love
+            with the species. We would go to local shops and reptile expos and
+            noticed there would always be lots of ball pythons, boas, and
+            geckos... but rarely would we find carpet pythons! On the rare
+            occasion that we did, the person selling it would generally not be
+            the person who had bred the animal or known the parents and would
+            not have much information about the snake that was for sale.
+          </p>
         </div>
       </div>
     </Home>

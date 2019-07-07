@@ -56,8 +56,8 @@ export default function AnimalsPage(props) {
       </div>
       <h1>Our Available Animals</h1>
       <div className="sales-shelf">
-        {saleItems.map(item => (
-          <SaleItem animal={item} />
+        {saleItems.map((item, index) => (
+          <SaleItem animal={item} index={index} />
         ))}
       </div>
     </PageHolder>

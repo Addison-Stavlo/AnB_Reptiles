@@ -3,6 +3,7 @@ import logo from "./images/logos/logo_small_white.png";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import AnimalsPage from "./components/AnimalsPage";
+import ItemPage from "./components/ItemPage";
 import Footer from "./components/Footer";
 import { Route } from "react-router";
 
@@ -13,7 +14,8 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/" component={HomePage} />
-      <Route path="/shop" component={AnimalsPage} />
+      <Route exact path="/shop" component={AnimalsPage} />
+      <Route exact path="/shop/:id" component={ItemPage} />
       <Footer />
     </div>
   );
