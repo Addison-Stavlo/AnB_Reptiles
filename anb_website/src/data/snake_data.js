@@ -92,7 +92,7 @@ const jungle2 = new SaleItem(
   "M",
   200,
   [picky, donk],
-  "J-C8"
+  "J-C9"
 );
 
 const saleItems = [papuan1, papuan2, jungle1, jungle2];
