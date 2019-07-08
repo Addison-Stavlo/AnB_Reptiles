@@ -6,15 +6,12 @@ function SaleItem(props) {
   const { src, type, dob, sex, price, parents, animalID } = props.animal;
 
   const SaleCard = styled.div`
-    /* width: 300px; */
-    /* height: 500px; */
     background: rgba(25, 25, 25, 0.9);
     border-radius: 10px;
     padding: 20px;
     margin: 5px;
     color: white;
     cursor: pointer;
-    /* box-sizing: border-box; */
 
     img {
       max-height: 280px;
