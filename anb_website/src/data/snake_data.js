@@ -2,7 +2,7 @@ import papuan1_img from "../images/snakes/postings/papuan1.jpg";
 import jungle1_img from "../images/snakes/postings/jungle1.JPG";
 import papuan2_img from "../images/snakes/postings/papuan2.JPG";
 import jungle2_img from "../images/snakes/postings/jungle2.JPG";
-import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam2.jpg";
+import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam1.jpg";
 import papuan_sire_img from "../images/snakes/postings/parents/papuan_sire2.jpg";
 import picky_img from "../images/snakes/postings/parents/picky.jpg";
 import donk_img from "../images/snakes/postings/parents/donk.jpg";
