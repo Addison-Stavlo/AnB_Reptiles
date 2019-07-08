@@ -1,3 +1,5 @@
 # AnB_Reptiles
 
-A basic site for info and sales postings for AnB Reptiles.
+A business site for AnB Reptiles.  This is intended for general information and sales listings.
+
+Built using React.
