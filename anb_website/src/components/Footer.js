@@ -13,6 +13,31 @@ export default function Footer(props) {
     .snap-widget-holder {
       max-width: 100vw;
       padding: 1px;
+
+      .snapwidget-widget-small,
+      .snapwidget-widget-medium {
+        display: none;
+      }
+
+      @media (max-width: 700px) {
+        .snapwidget-widget-small {
+          display: block;
+        }
+        .snapwidget-widget-large,
+        .snapwidget-widget-medium {
+          display: none;
+        }
+      }
+
+      @media (min-width: 700px) and (max-width: 1500px) {
+        .snapwidget-widget-medium {
+          display: block;
+        }
+        .snapwidget-widget-large,
+        .snapwidget-widget-small {
+          display: none;
+        }
+      }
     }
 
     a {
@@ -33,7 +58,31 @@ export default function Footer(props) {
       <div className="snap-widget-holder">
         <iframe
           src="https://snapwidget.com/embed/708941"
-          className="snapwidget-widget"
+          className="snapwidget-widget-large"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          style={{
+            width: "100%",
+            height: "100vw"
+          }}
+        />
+
+        <iframe
+          src="https://snapwidget.com/embed/711206"
+          className="snapwidget-widget-small"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          style={{
+            width: "100%",
+            height: "160vw"
+          }}
+        />
+
+        <iframe
+          src="https://snapwidget.com/embed/711209"
+          className="snapwidget-widget-medium"
           allowtransparency="true"
           frameborder="0"
           scrolling="no"

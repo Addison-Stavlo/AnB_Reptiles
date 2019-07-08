@@ -39,7 +39,7 @@ export default function HomePage(props) {
 
     .about {
       background: #d1d4c7;
-      padding: 30px;
+      padding: 30px 30px 0;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -51,19 +51,20 @@ export default function HomePage(props) {
         width: 55%;
         max-width: 800px;
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
           width: 90%;
           text-align: center;
         }
         h2 {
           margin-left: 2vw;
           font-size: calc(18px + 3vmin);
+          margin-bottom: 20px;
         }
 
         p {
           font-size: calc(12px + 1vmin);
           line-height: calc(12px + 1.5vmin);
-          padding: 10px 0;
+          padding: 10px;
         }
       }
 
@@ -73,6 +74,14 @@ export default function HomePage(props) {
 
       .snake-carousel {
         height: 300px;
+
+        @media (max-width: 750px) {
+          order: 5;
+        }
+      }
+
+      :last-of-type {
+        padding-bottom: 30px;
       }
     }
   `;
@@ -95,10 +104,10 @@ export default function HomePage(props) {
             After taking in our first carpet python, we quickly fell in love
             with the species. We would go to local shops and reptile expos and
             noticed there would always be lots of ball pythons, boas, and
-            geckos... but rarely would we find carpet pythons! On the rare
-            occasion that we did, the person selling it would generally not be
-            the person who had bred the animal or known the parents and would
-            not have much information about the snake that was for sale.
+            geckos... but rarely would we find carpet pythons! On the occasion
+            that we did, the person selling it would generally not be the person
+            who had bred the animal or known the parents and would not have much
+            information about the snake that was for sale.
           </p>
           <p>
             With a desire to share this awesome species with the reptile
