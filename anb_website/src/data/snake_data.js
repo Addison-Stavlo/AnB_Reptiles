@@ -31,7 +31,7 @@ const papuan_dam = new Snake(
   "Shela",
   papuan_dam_img,
   "Papuan Carpet Python",
-  "2015",
+  "2014",
   "F"
 );
 const papuan_sire = new Snake(
@@ -45,10 +45,10 @@ const picky = new Snake(
   "Miss Picky",
   picky_img,
   "Jungle Carpet Python",
-  "2014",
+  "2012",
   "F"
 );
-const donk = new Snake("Donk", donk_img, "Jungle Carpet Python", "2012", "M");
+const donk = new Snake("Donk", donk_img, "Jungle Carpet Python", "2010", "M");
 
 //create sale animals
 const papuan1 = new SaleItem(
