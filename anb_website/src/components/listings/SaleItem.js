@@ -71,7 +71,11 @@ function SaleItem(props) {
       <h3>${price} + shipping</h3>
       <h3 className="view-more">View More Photos</h3>
       <h3 className="view-more">View Parent Info</h3>
-      <a href="http://m.me/AnBReptiles" target="_blank">
+      <a
+        href="http://m.me/AnBReptiles"
+        target="_blank"
+        onClick={ev => ev.stopPropagation()}
+      >
         Interested? <br /> Message Us on Facebook
       </a>
     </SaleCard>

@@ -25,7 +25,6 @@ export default function HomePage(props) {
       p {
         width: 35%;
         max-width: 350px;
-        /* color: rgb(219, 200, 191); */
         color: white;
         border-radius: 15px;
         font-size: calc(10px + 4vmin);
@@ -34,7 +33,6 @@ export default function HomePage(props) {
         bottom: 2vw;
         right: 2vw;
         margin: auto;
-        /* background: rgba(25, 25, 25, 0.7); */
         padding: 10px 5px;
       }
     }
@@ -42,8 +40,6 @@ export default function HomePage(props) {
     .about {
       background: #d1d4c7;
       padding: 30px;
-      /* padding-top: calc(5px + 3vmin); */
-      /* padding-bottom: calc(15px + 5vw); */
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -60,16 +56,12 @@ export default function HomePage(props) {
           text-align: center;
         }
         h2 {
-          /* width: 60%; */
           margin-left: 2vw;
           font-size: calc(18px + 3vmin);
         }
 
         p {
           font-size: calc(12px + 1vmin);
-          /* margin-left: 2vw; */
-          /* width: 50%; */
-
           line-height: calc(12px + 1.5vmin);
           padding: 10px 0;
         }
@@ -125,13 +117,16 @@ export default function HomePage(props) {
         </div>
         <div className="about-text">
           <p>
-            After taking in our first carpet python, we quickly fell in love
-            with the species. We would go to local shops and reptile expos and
-            noticed there would always be lots of ball pythons, boas, and
-            geckos... but rarely would we find carpet pythons! On the rare
-            occasion that we did, the person selling it would generally not be
-            the person who had bred the animal or known the parents and would
-            not have much information about the snake that was for sale.
+            While we have been primarily producing the Jungle and Papuan
+            sub-species of Carpet Python, we have been working on bringing both
+            Bredli and Coastal sub-species into the mix for future breeding
+            seasons. On top of expanding our variety of sub-species we are also
+            excited to be working with Axanthic, Caramel, and Tiger morphs as
+            well!
+          </p>
+          <p>
+            Check back soon as we hope to add a 'show off' section to this site
+            to help display some of the awesome animals we are working with.
           </p>
         </div>
       </div>
