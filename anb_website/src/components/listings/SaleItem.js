@@ -12,6 +12,12 @@ function SaleItem(props) {
     margin: 5px;
     color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-bottom: 70px;
 
     img {
       max-height: 280px;
@@ -22,13 +28,14 @@ function SaleItem(props) {
     h1 {
       font-size: 22px;
       padding-top: 10px;
+      margin: 8px auto;
     }
 
     h3 {
       font-size: 18px;
       font-weight: normal;
       text-align: left;
-      margin: 10px auto;
+      margin: 5px auto;
       width: 99%;
     }
 
@@ -41,11 +48,13 @@ function SaleItem(props) {
       margin: 0 auto;
       padding: 10px;
       color: white;
-      display: block;
+      /* display: block; */
       background: rgb(25, 25, 25);
       width: 80%;
       border-radius: 10px;
       text-decoration: none;
+      position: absolute;
+      bottom: 10px;
 
       :hover {
         background: rgb(50, 50, 50);
@@ -57,6 +66,10 @@ function SaleItem(props) {
         box-shadow: 0 0 15px 0 inset;
       }
     }
+
+    :hover {
+      box-shadow: 0 0 20px 0px white inset;
+    }
   `;
   return (
     <SaleCard onClick={() => props.history.push(`/shop/${props.index}`)}>
@@ -66,8 +79,7 @@ function SaleItem(props) {
       <h3>Date Hatched: {dob}</h3>
       <h3>Sex: {sex}</h3>
       <h3>${price} + shipping</h3>
-      <h3 className="view-more">View More Photos</h3>
-      <h3 className="view-more">View Parent Info</h3>
+      <h3 className="view-more">Click for More Info!</h3>
       <a
         href="http://m.me/AnBReptiles"
         target="_blank"

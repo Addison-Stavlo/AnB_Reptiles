@@ -2,6 +2,8 @@ import papuan1_img from "../images/snakes/postings/papuan1.jpg";
 import jungle1_img from "../images/snakes/postings/jungle1.JPG";
 import papuan2_img from "../images/snakes/postings/papuan2.JPG";
 import jungle2_img from "../images/snakes/postings/jungle2.JPG";
+import papuan3_img from "../images/snakes/postings/papuan3.jpg";
+import jungle3_img from "../images/snakes/postings/jungle3.jpg";
 import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam1.jpg";
 import papuan_sire_img from "../images/snakes/postings/parents/papuan_sire2.jpg";
 import picky_img from "../images/snakes/postings/parents/picky.jpg";
@@ -73,6 +75,17 @@ const papuan2 = new SaleItem(
   "P-A3"
 );
 
+const papuan3 = new SaleItem(
+  "none",
+  papuan3_img,
+  "Papuan Carpet Python",
+  "2018-4-2",
+  "F",
+  250,
+  [papuan_dam, papuan_sire],
+  "P-A2"
+);
+
 const jungle1 = new SaleItem(
   "none",
   jungle1_img,
@@ -95,6 +108,17 @@ const jungle2 = new SaleItem(
   "J-C9"
 );
 
-const saleItems = [papuan1, papuan2, jungle1, jungle2];
+const jungle3 = new SaleItem(
+  "none",
+  jungle3_img,
+  "Jungle Carpet Python",
+  "2018-4-10",
+  "M",
+  200,
+  [picky, donk],
+  "J-C7"
+);
+
+const saleItems = [papuan1, papuan2, papuan3, jungle1, jungle2, jungle3];
 
 export default saleItems;
