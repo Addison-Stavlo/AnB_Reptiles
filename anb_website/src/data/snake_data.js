@@ -1,9 +1,17 @@
+//sale item pics
 import papuan1_img from "../images/snakes/postings/papuan1.jpg";
+import papuan1_sml from "../images/snakes/postings/papuan1_600.jpg";
 import jungle1_img from "../images/snakes/postings/jungle1.JPG";
+import jungle1_sml from "../images/snakes/postings/jungle1_600.jpg";
 import papuan2_img from "../images/snakes/postings/papuan2.JPG";
+import papuan2_sml from "../images/snakes/postings/papuan2_600.jpg";
 import jungle2_img from "../images/snakes/postings/jungle2.JPG";
+import jungle2_sml from "../images/snakes/postings/jungle2_600.jpg";
 import papuan3_img from "../images/snakes/postings/papuan3.jpg";
+import papuan3_sml from "../images/snakes/postings/papuan3_600_450.jpg";
 import jungle3_img from "../images/snakes/postings/jungle3.jpg";
+import jungle3_sml from "../images/snakes/postings/jungle3_600_450.jpg";
+// parent pics
 import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam1.jpg";
 import papuan_sire_img from "../images/snakes/postings/parents/papuan_sire2.jpg";
 import picky_img from "../images/snakes/postings/parents/picky.jpg";
@@ -20,11 +28,12 @@ class Snake {
 }
 
 class SaleItem extends Snake {
-  constructor(name, src, type, dob, sex, price, parents, animalID) {
+  constructor(name, src, src_small, type, dob, sex, price, parents, animalID) {
     super(name, src, type, dob, sex);
     this.price = price;
     this.parents = parents;
     this.animalID = animalID;
+    this.src_small = src_small;
   }
 }
 
@@ -56,6 +65,7 @@ const donk = new Snake("Donk", donk_img, "Jungle Carpet Python", "2010", "M");
 const papuan1 = new SaleItem(
   "none",
   papuan1_img,
+  papuan1_sml,
   "Papuan Carpet Python",
   "2018-4-2",
   "M",
@@ -67,6 +77,7 @@ const papuan1 = new SaleItem(
 const papuan2 = new SaleItem(
   "none",
   papuan2_img,
+  papuan2_sml,
   "Papuan Carpet Python",
   "2018-4-2",
   "M",
@@ -78,6 +89,7 @@ const papuan2 = new SaleItem(
 const papuan3 = new SaleItem(
   "none",
   papuan3_img,
+  papuan3_sml,
   "Papuan Carpet Python",
   "2018-4-2",
   "F",
@@ -89,6 +101,7 @@ const papuan3 = new SaleItem(
 const jungle1 = new SaleItem(
   "none",
   jungle1_img,
+  jungle1_sml,
   "Jungle Carpet Python",
   "2018-4-10",
   "M",
@@ -100,6 +113,7 @@ const jungle1 = new SaleItem(
 const jungle2 = new SaleItem(
   "none",
   jungle2_img,
+  jungle2_sml,
   "Jungle Carpet Python",
   "2018-4-10",
   "M",
@@ -111,6 +125,7 @@ const jungle2 = new SaleItem(
 const jungle3 = new SaleItem(
   "none",
   jungle3_img,
+  jungle3_sml,
   "Jungle Carpet Python",
   "2018-4-10",
   "M",

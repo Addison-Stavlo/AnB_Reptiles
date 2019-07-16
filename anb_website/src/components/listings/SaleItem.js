@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 
 function SaleItem(props) {
-  const { src, type, dob, sex, price, parents, animalID } = props.animal;
+  const { src_small, type, dob, sex, price, parents, animalID } = props.animal;
 
   const SaleCard = styled.div`
     background: rgba(25, 25, 25, 0.9);
@@ -73,7 +73,7 @@ function SaleItem(props) {
   `;
   return (
     <SaleCard onClick={() => props.history.push(`/shop/${props.index}`)}>
-      <img src={src} />
+      <img src={src_small} />
       <h1>{type}</h1>
       <h3>ID: {animalID}</h3>
       <h3>Date Hatched: {dob}</h3>

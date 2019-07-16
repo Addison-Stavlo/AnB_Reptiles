@@ -14,13 +14,12 @@ export default function HomePage(props) {
     .headline {
       position: relative;
       width: 100%;
-      padding: 10px;
       box-sizing: border-box;
-
+      margin-bottom: -5px;
+      padding-right: -10px;
       img {
         z-index: -1;
         width: 100%;
-        border-radius: 10px;
       }
       p {
         width: 35%;
