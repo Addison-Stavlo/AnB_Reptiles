@@ -17,6 +17,8 @@ export default function Carousel(props) {
     height: 100%;
     display: flex;
     align-items: center;
+    /* margin-left: -100px;
+    margin-right: -100px; */
 
     img {
       width: 300px;
