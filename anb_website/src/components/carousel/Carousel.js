@@ -7,7 +7,7 @@ export default function Carousel(props) {
   const [count, setCount] = React.useState(0);
 
   const increaseCount = () => {
-    const countDelay = 2000; //ms
+    const countDelay = 2500 + Math.floor(Math.random() * 1000); //ms
     setTimeout(() => setCount((count + 1) % images.length), countDelay);
   };
   React.useEffect(increaseCount, [count]);
@@ -17,8 +17,6 @@ export default function Carousel(props) {
     height: 100%;
     display: flex;
     align-items: center;
-    /* margin-left: -100px;
-    margin-right: -100px; */
 
     img {
       width: 300px;
@@ -28,7 +26,7 @@ export default function Carousel(props) {
   `;
   return (
     <Wrapper>
-      <img src={images[count]} />
+      <img src={images[count]} alt="alternating images" />
     </Wrapper>
   );
 }

@@ -81,9 +81,13 @@ export default function ItemPage(props) {
       <h3>Sex: {sex}</h3>
       <h3>${price} + shipping</h3>
       <div>
-        <img src={src} />
+        <img src={src} alt="snake for sale" />
       </div>
-      <a href="http://m.me/AnBReptiles" target="_blank">
+      <a
+        href="http://m.me/AnBReptiles"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Interested? <br /> Message Us on Facebook
       </a>
       <hr />
@@ -93,14 +97,14 @@ export default function ItemPage(props) {
       <h3>Year: {parents[0].dob}</h3>
       <h3>Sex: {parents[0].sex}</h3>
       <div>
-        <img src={parents[0].src} />
+        <img src={parents[0].src} alt="parent snake 1" />
       </div>
       <h1>"{parents[1].name}"</h1>
       <h1>{parents[1].type}</h1>
       <h3>Year: {parents[1].dob}</h3>
       <h3>Sex: {parents[1].sex}</h3>
       <div>
-        <img src={parents[1].src} />
+        <img src={parents[1].src} alt="parent snake 2" />
       </div>
     </PageWrapper>
   );

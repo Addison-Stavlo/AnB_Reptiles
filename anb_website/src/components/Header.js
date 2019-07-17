@@ -69,6 +69,7 @@ export default function Header(props) {
           className="social insta_logo"
           href="https://www.instagram.com/anb_reptiles/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img className="social insta_logo" src={insta_logo} alt="instagram" />
         </a>
@@ -76,6 +77,7 @@ export default function Header(props) {
           className="social insta_logo"
           href="https://www.facebook.com/AnBReptiles/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img className="social fb_logo" src={fb_logo} alt="facebook" />
         </a>
