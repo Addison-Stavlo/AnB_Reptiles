@@ -50,13 +50,18 @@ export default function Footer(props) {
       <h2>Some Pretty Pictures!</h2>
       <p>
         See more at our{" "}
-        <a href="https://www.instagram.com/anb_reptiles/" target="_blank">
+        <a
+          href="https://www.instagram.com/anb_reptiles/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Instagram
         </a>
         .
       </p>
       <div className="snap-widget-holder">
         <iframe
+          title="wide image grid"
           src="https://snapwidget.com/embed/708941"
           className="snapwidget-widget-large"
           allowtransparency="true"
@@ -69,6 +74,7 @@ export default function Footer(props) {
         />
 
         <iframe
+          title="small image grid"
           src="https://snapwidget.com/embed/711206"
           className="snapwidget-widget-small"
           allowtransparency="true"
@@ -81,6 +87,7 @@ export default function Footer(props) {
         />
 
         <iframe
+          title="image grid"
           src="https://snapwidget.com/embed/711209"
           className="snapwidget-widget-medium"
           allowtransparency="true"
