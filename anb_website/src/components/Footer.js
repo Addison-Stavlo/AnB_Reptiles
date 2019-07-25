@@ -2,49 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 export default function Footer(props) {
-  const FooterBox = styled.div`
-    color: rgb(230, 230, 230);
-    h2 {
-      /* width: 50%; */
-      font-size: calc(16px + 2vmin);
-      padding-top: calc(5px + 3vmin);
-    }
-
-    .snap-widget-holder {
-      max-width: 100vw;
-      padding: 1px;
-
-      .snapwidget-widget-small,
-      .snapwidget-widget-medium {
-        display: none;
-      }
-
-      @media (max-width: 700px) {
-        .snapwidget-widget-small {
-          display: block;
-        }
-        .snapwidget-widget-large,
-        .snapwidget-widget-medium {
-          display: none;
-        }
-      }
-
-      @media (min-width: 700px) and (max-width: 1500px) {
-        .snapwidget-widget-medium {
-          display: block;
-        }
-        .snapwidget-widget-large,
-        .snapwidget-widget-small {
-          display: none;
-        }
-      }
-    }
-
-    a {
-      color: white;
-    }
-  `;
-
   return (
     <FooterBox>
       <h2>Some Pretty Pictures!</h2>
@@ -102,3 +59,46 @@ export default function Footer(props) {
     </FooterBox>
   );
 }
+
+const FooterBox = styled.div`
+  color: rgb(230, 230, 230);
+  h2 {
+    /* width: 50%; */
+    font-size: calc(16px + 2vmin);
+    padding-top: calc(5px + 3vmin);
+  }
+
+  .snap-widget-holder {
+    max-width: 100vw;
+    padding: 1px;
+
+    .snapwidget-widget-small,
+    .snapwidget-widget-medium {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      .snapwidget-widget-small {
+        display: block;
+      }
+      .snapwidget-widget-large,
+      .snapwidget-widget-medium {
+        display: none;
+      }
+    }
+
+    @media (min-width: 700px) and (max-width: 1500px) {
+      .snapwidget-widget-medium {
+        display: block;
+      }
+      .snapwidget-widget-large,
+      .snapwidget-widget-small {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: white;
+  }
+`;

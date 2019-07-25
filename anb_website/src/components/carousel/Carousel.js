@@ -12,21 +12,22 @@ export default function Carousel(props) {
   };
   React.useEffect(increaseCount, [count]);
 
-  const Wrapper = styled.div`
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px 0 black;
-    }
-  `;
   return (
     <Wrapper>
       <img src={images[count]} alt="alternating images" />
     </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+  }
+`;
