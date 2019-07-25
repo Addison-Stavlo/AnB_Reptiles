@@ -10,105 +10,6 @@ export default function HomePage(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const Home = styled.div`
-    .headline {
-      position: relative;
-      width: 100%;
-      box-sizing: border-box;
-      margin-bottom: -5px;
-      padding-right: -10px;
-      img {
-        z-index: -1;
-        width: 100%;
-      }
-      p {
-        width: 35%;
-        max-width: 350px;
-        color: white;
-        border-radius: 15px;
-        font-size: calc(10px + 4vmin);
-        font-weight: bold;
-        position: absolute;
-        bottom: 2vw;
-        right: 2vw;
-        margin: auto;
-        padding: 10px 5px;
-      }
-    }
-
-    .about {
-      background: #d1d4c7;
-
-      .content-holder {
-        padding: 30px 30px 0;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        max-width: 1500px;
-        margin: 0 auto;
-
-        .about-text {
-          color: rgb(30, 30, 30);
-          text-align: left;
-          width: 55%;
-          max-width: 800px;
-
-          @media (max-width: 750px) {
-            width: 90%;
-            text-align: center;
-          }
-          h2 {
-            margin-left: 2vw;
-            font-size: calc(18px + 3vmin);
-            margin-bottom: 20px;
-          }
-
-          p {
-            font-size: calc(12px + 1vmin);
-            line-height: calc(12px + 1.5vmin);
-            padding: 10px;
-          }
-        }
-
-        .carousel-holder {
-          height: 600px;
-          margin: 0 50px 0 -50px;
-          @media (max-width: 1250px) {
-            margin: 0 30px 0 -30px;
-          }
-          @media (max-width: 1024px) {
-            margin: 0 15px 0 -15px;
-          }
-          @media (max-width: 850px) {
-            margin: 0;
-          }
-        }
-
-        .snake-carousel {
-          height: 300px;
-          margin: 0 -50px 0 50px;
-          @media (max-width: 1250px) {
-            margin: 0 -30px 0 30px;
-          }
-          @media (max-width: 1024px) {
-            margin: 0 -15px 0 15px;
-          }
-          @media (max-width: 850px) {
-            margin: 0;
-          }
-          @media (max-width: 750px) {
-            order: 5;
-          }
-        }
-
-        :last-of-type {
-          padding-bottom: 30px;
-        }
-      }
-    }
-  `;
-
   return (
     <Home>
       <div className="headline">
@@ -168,3 +69,102 @@ export default function HomePage(props) {
     </Home>
   );
 }
+
+const Home = styled.div`
+  .headline {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: -5px;
+    padding-right: -10px;
+    img {
+      z-index: -1;
+      width: 100%;
+    }
+    p {
+      width: 35%;
+      max-width: 350px;
+      color: white;
+      border-radius: 15px;
+      font-size: calc(10px + 4vmin);
+      font-weight: bold;
+      position: absolute;
+      bottom: 2vw;
+      right: 2vw;
+      margin: auto;
+      padding: 10px 5px;
+    }
+  }
+
+  .about {
+    background: #d1d4c7;
+
+    .content-holder {
+      padding: 30px 30px 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1500px;
+      margin: 0 auto;
+
+      .about-text {
+        color: rgb(30, 30, 30);
+        text-align: left;
+        width: 55%;
+        max-width: 800px;
+
+        @media (max-width: 750px) {
+          width: 90%;
+          text-align: center;
+        }
+        h2 {
+          margin-left: 2vw;
+          font-size: calc(18px + 3vmin);
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: calc(12px + 1vmin);
+          line-height: calc(12px + 1.5vmin);
+          padding: 10px;
+        }
+      }
+
+      .carousel-holder {
+        height: 600px;
+        margin: 0 50px 0 -50px;
+        @media (max-width: 1250px) {
+          margin: 0 30px 0 -30px;
+        }
+        @media (max-width: 1024px) {
+          margin: 0 15px 0 -15px;
+        }
+        @media (max-width: 850px) {
+          margin: 0;
+        }
+      }
+
+      .snake-carousel {
+        height: 300px;
+        margin: 0 -50px 0 50px;
+        @media (max-width: 1250px) {
+          margin: 0 -30px 0 30px;
+        }
+        @media (max-width: 1024px) {
+          margin: 0 -15px 0 15px;
+        }
+        @media (max-width: 850px) {
+          margin: 0;
+        }
+        @media (max-width: 750px) {
+          order: 5;
+        }
+      }
+
+      :last-of-type {
+        padding-bottom: 30px;
+      }
+    }
+  }
+`;

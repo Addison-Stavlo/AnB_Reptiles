@@ -11,68 +11,6 @@ export default function ItemPage(props) {
     props.match.params.id
   ];
 
-  const PageWrapper = styled.section`
-    background: #d1d4c7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    h1 {
-      margin-top: 20px;
-      font-size: 30px;
-      padding-top: 10px;
-    }
-
-    h3 {
-      font-size: 20px;
-
-      margin: 10px auto 0;
-    }
-
-    img {
-      width: 90%;
-      /* max-height: 1000px; */
-      max-width: 1000px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px 0 gray;
-      margin: 10px auto;
-    }
-
-    a {
-      margin: 0 auto 10px;
-      padding: 10px;
-      color: white;
-      display: block;
-      background: rgb(25, 25, 25);
-      width: 200px;
-      border-radius: 10px;
-      text-decoration: none;
-
-      :hover {
-        background: rgb(50, 50, 50);
-        box-shadow: 0 0 5px 0 inset;
-      }
-
-      :active {
-        background: rgb(50, 50, 50);
-        box-shadow: 0 0 15px 0 inset;
-      }
-    }
-
-    hr {
-      margin-bottom: 10px;
-      border-top: 2px dashed black;
-      border-bottom: none;
-      width: 90%;
-    }
-
-    .parents-title {
-      text-decoration: underline;
-      font-size: 38px;
-    }
-  `;
-
   return (
     <PageWrapper>
       <h1>{type}</h1>
@@ -109,3 +47,65 @@ export default function ItemPage(props) {
     </PageWrapper>
   );
 }
+
+const PageWrapper = styled.section`
+  background: #d1d4c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+
+    margin: 10px auto 0;
+  }
+
+  img {
+    width: 90%;
+    /* max-height: 1000px; */
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 gray;
+    margin: 10px auto;
+  }
+
+  a {
+    margin: 0 auto 10px;
+    padding: 10px;
+    color: white;
+    display: block;
+    background: rgb(25, 25, 25);
+    width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    :hover {
+      background: rgb(50, 50, 50);
+      box-shadow: 0 0 5px 0 inset;
+    }
+
+    :active {
+      background: rgb(50, 50, 50);
+      box-shadow: 0 0 15px 0 inset;
+    }
+  }
+
+  hr {
+    margin-bottom: 10px;
+    border-top: 2px dashed black;
+    border-bottom: none;
+    width: 90%;
+  }
+
+  .parents-title {
+    text-decoration: underline;
+    font-size: 38px;
+  }
+`;

@@ -8,38 +8,6 @@ export default function AnimalsPage(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const PageHolder = styled.div`
-    background: #d1d4c7;
-
-    .sales-note {
-      h2 {
-        margin: 0;
-        padding: 20px 0 0;
-        font-size: calc(15px + 1vmin);
-      }
-      p {
-        padding: 20px 0;
-        font-size: calc(12px + 1vmin);
-        width: 80%;
-        margin: 0 auto;
-        max-width: 800px;
-      }
-    }
-
-    h1 {
-      font-size: calc(15px + 1.5vmin);
-    }
-
-    .sales-shelf {
-      margin: 0 auto;
-      width: 90%;
-      max-width: 1400px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  `;
-
   return (
     <PageHolder>
       <div className="sales-note">
@@ -63,3 +31,35 @@ export default function AnimalsPage(props) {
     </PageHolder>
   );
 }
+
+const PageHolder = styled.div`
+  background: #d1d4c7;
+
+  .sales-note {
+    h2 {
+      margin: 0;
+      padding: 20px 0 0;
+      font-size: calc(15px + 1vmin);
+    }
+    p {
+      padding: 20px 0;
+      font-size: calc(12px + 1vmin);
+      width: 80%;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
+
+  h1 {
+    font-size: calc(15px + 1.5vmin);
+  }
+
+  .sales-shelf {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
