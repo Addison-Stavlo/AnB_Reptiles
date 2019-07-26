@@ -7,10 +7,12 @@ export default function Carousel(props) {
 
   const [count, setCount] = React.useState(0);
 
+  const countDelay = 2500 + Math.floor(Math.random() * 1000);
+
   const increaseCount = () => {
-    const countDelay = 2500 + Math.floor(Math.random() * 1000);
     setTimeout(() => setCount((count + 1) % images.length), countDelay);
   };
+
   React.useEffect(increaseCount, [count]);
 
   const transitions = useTransition(images[count], item => item, {
@@ -25,7 +27,7 @@ export default function Carousel(props) {
       {transitions.map(({ item, props, key }) => (
         <animated.img
           src={item}
-          key={item}
+          key={key}
           style={{ ...props }}
           alt="alternating pics"
         />
