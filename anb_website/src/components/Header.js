@@ -39,15 +39,16 @@ export default function Header(props) {
 
 const StyledHeader = styled.div`
   margin-bottom: 15vmin;
+
   div {
     z-index: 1;
     background-color: rgb(20, 20, 20);
     padding-top: calc(15px + 4vmin);
     height: 10vmin;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px 0 black;
 
     color: white;
     position: fixed;
