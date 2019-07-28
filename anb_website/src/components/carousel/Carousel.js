@@ -1,39 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-import { useTransition, animated, config } from "react-spring";
 
-export default function Carousel(props) {
-  const images = props.images;
+export default class Carousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.countDelay = 2500 + Math.random() * 1000;
+    this.imageBox = React.createRef();
+    this.state = {
+      count: 0
+    };
+  }
 
-  const [count, setCount] = React.useState(0);
+  componentDidMount() {
+    setInterval(this.increaseCount, this.countDelay);
+    this.imageBox.current.classList.add("transition");
+  }
 
-  const countDelay = 2500 + Math.floor(Math.random() * 1000);
-
-  const increaseCount = () => {
-    setTimeout(() => setCount((count + 1) % images.length), countDelay);
+  increaseCount = () => {
+    this.setState({
+      count: (this.state.count + 1) % this.props.images.length
+    });
   };
 
-  React.useEffect(increaseCount, [count]);
+  render() {
+    const images = this.props.images;
 
-  const transitions = useTransition(images[count], item => item, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    config: config.molasses
-  });
-
-  return (
-    <Wrapper>
-      {transitions.map(({ item, props, key }) => (
-        <animated.img
-          src={item}
-          key={key}
-          style={{ ...props }}
-          alt="alternating pics"
+    return (
+      <Wrapper countDelay={this.countDelay}>
+        <img
+          className="image-main"
+          src={images[this.state.count]}
+          alt="alternating images"
+          ref={this.imageBox}
         />
-      ))}
-    </Wrapper>
-  );
+      </Wrapper>
+    );
+  }
 }
 
 const Wrapper = styled.div`
@@ -43,10 +45,30 @@ const Wrapper = styled.div`
   align-items: center;
   position: relative;
 
+  @keyframes fadeSequence-main {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   img {
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 black;
-    position: absolute;
+    /* position: absolute; */
+  }
+
+  .transition {
+    animation: fadeSequence-main ${props => `${props.countDelay / 1000}s`}
+      infinite;
   }
 `;
