@@ -11,6 +11,12 @@ import papuan3_img from "../images/snakes/postings/papuan3.jpg";
 import papuan3_sml from "../images/snakes/postings/papuan3_600_450.jpg";
 import jungle3_img from "../images/snakes/postings/jungle3.jpg";
 import jungle3_sml from "../images/snakes/postings/jungle3_600_450.jpg";
+import jungle4_img from "../images/snakes/postings/jungle_4.jpg";
+import jungle4_sml from "../images/snakes/postings/jungle_4_600.jpg";
+import jungle5_img from "../images/snakes/postings/jungle_5.jpg";
+import jungle5_sml from "../images/snakes/postings/jungle_5_600.jpg";
+import jungle6_img from "../images/snakes/postings/jungle_6.jpg";
+import jungle6_sml from "../images/snakes/postings/jungle_6_600.jpg";
 // parent pics
 import papuan_dam_img from "../images/snakes/postings/parents/papuan_dam1.jpg";
 import papuan_sire_img from "../images/snakes/postings/parents/papuan_sire2.jpg";
@@ -134,6 +140,52 @@ const jungle3 = new SaleItem(
   "J-C7"
 );
 
-const saleItems = [papuan1, papuan2, papuan3, jungle1, jungle2, jungle3];
+const jungle4 = new SaleItem(
+  "none",
+  jungle4_img,
+  jungle4_sml,
+  "Jungle Carpet Python",
+  "2018-4-10",
+  "F",
+  200,
+  [picky, donk],
+  "J-C4"
+);
+
+const jungle5 = new SaleItem(
+  "none",
+  jungle5_img,
+  jungle5_sml,
+  "Jungle Carpet Python",
+  "2018-4-10",
+  "M",
+  200,
+  [picky, donk],
+  "J-C5"
+);
+
+const jungle6 = new SaleItem(
+  "none",
+  jungle6_img,
+  jungle6_sml,
+  "Jungle Carpet Python",
+  "2018-4-10",
+  "F",
+  200,
+  [picky, donk],
+  "J-C6"
+);
+
+const saleItems = [
+  papuan1,
+  papuan2,
+  papuan3,
+  jungle1,
+  jungle2,
+  jungle3,
+  jungle4,
+  jungle5,
+  jungle6
+];
 
 export default saleItems;
