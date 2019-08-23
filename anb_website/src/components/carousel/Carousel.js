@@ -5,44 +5,44 @@ export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.countDelay = 2500 + Math.random() * 1000;
-    this.imageBox = React.createRef();
-    this.imageBox2 = React.createRef();
+    // this.imageBox = React.createRef();
+    // this.imageBox2 = React.createRef();
     this.state = {
-      count: 0,
-      count2: 1
+      count: 0
+      // count2: 1
     };
   }
 
   componentDidMount() {
     // setInterval(this.increaseCount, this.countDelay * 2);
-    this.imageBox.current.classList.add("transition");
-    this.imageBox2.current.classList.add("transition2");
+    // this.imageBox.current.classList.add("transition");
+    // this.imageBox2.current.classList.add("transition2");
     setTimeout(() => {
       setInterval(this.increaseCount, this.countDelay * 2);
-    }, (this.countDelay * 3) / 2);
-    setTimeout(() => {
-      setInterval(this.increaseCount2, this.countDelay * 2);
-    }, this.countDelay / 2);
+    }, this.countDelay);
+    // setTimeout(() => {
+    //   setInterval(this.increaseCount2, this.countDelay * 2);
+    // }, this.countDelay / 2);
   }
 
   increaseCount = () => {
     this.setState({
-      count: (this.state.count + 2) % this.props.images.length
+      count: (this.state.count + 1) % this.props.images.length
     });
   };
 
-  increaseCount2 = () => {
-    this.setState({
-      count2: (this.state.count2 + 2) % this.props.images.length
-    });
-  };
+  // increaseCount2 = () => {
+  //   this.setState({
+  //     count2: (this.state.count2 + 2) % this.props.images.length
+  //   });
+  // };
 
   render() {
     const images = this.props.images;
 
     return (
       <Wrapper countDelay={this.countDelay}>
-        <img
+        {/* <img
           className="image-main"
           src={images[this.state.count]}
           alt="alternating images"
@@ -53,7 +53,7 @@ export default class Carousel extends React.Component {
           src={images[this.state.count2]}
           alt="alternating images"
           ref={this.imageBox2}
-        />
+        /> */}
       </Wrapper>
     );
   }
@@ -66,7 +66,7 @@ const Wrapper = styled.div`
   align-items: center;
   position: relative;
 
-  @keyframes fadeSequence-main {
+  /* @keyframes fadeSequence-main {
     0% {
       opacity: 0;
     }
@@ -82,9 +82,9 @@ const Wrapper = styled.div`
     100% {
       opacity: 0;
     }
-  }
+  } */
 
-  @keyframes fadeSequence-secondary {
+  /* @keyframes fadeSequence-secondary {
     0% {
       opacity: 1;
     }
@@ -100,7 +100,7 @@ const Wrapper = styled.div`
     100% {
       opacity: 1;
     }
-  }
+  } */
 
   img {
     width: 300px;
@@ -109,7 +109,7 @@ const Wrapper = styled.div`
     position: absolute;
   }
 
-  .transition {
+  /* .transition {
     animation: fadeSequence-main ${props => `${(props.countDelay * 2) / 1000}s`}
       infinite;
   }
@@ -117,5 +117,5 @@ const Wrapper = styled.div`
   .transition2 {
     animation: fadeSequence-secondary
       ${props => `${(props.countDelay * 2) / 1000}s`} infinite;
-  }
+  } */
 `;
