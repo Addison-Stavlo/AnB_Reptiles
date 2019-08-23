@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
-    this.countDelay = 2500 + Math.random() * 1000;
+    this.countDelay = 1500 + Math.random() * 1000;
     // this.imageBox = React.createRef();
     // this.imageBox2 = React.createRef();
     this.state = {
@@ -54,6 +54,16 @@ export default class Carousel extends React.Component {
           alt="alternating images"
           ref={this.imageBox2}
         /> */}
+        {images.map((image, index) => {
+          let isActive = index === this.state.count % images.length;
+          return (
+            <img
+              src={image}
+              alt="snakes and peoples"
+              className={isActive ? "carousel-img active-img" : "carousel-img"}
+            />
+          );
+        })}
       </Wrapper>
     );
   }
@@ -107,6 +117,36 @@ const Wrapper = styled.div`
     border-radius: 10px;
     box-shadow: 0 0 10px 0 black;
     position: absolute;
+    animation-name: fadeout;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    opacity: 0;
+  }
+
+
+  .active-img {
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   /* .transition {
