@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/logos/logo_small_white.png";
+import logo from "../images/logos/ablogo.png";
 import fb_logo from "../images/logos/social_media/facebook_white.png";
 import insta_logo from "../images/logos/social_media/instagram_white.png";
 
@@ -42,7 +42,7 @@ const StyledHeader = styled.div`
 
   div {
     z-index: 1;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 0, 0);
     padding-top: calc(15px + 4vmin);
     height: 10vmin;
     display: flex;
@@ -78,8 +78,8 @@ const StyledHeader = styled.div`
     }
 
     .anb_logo {
-      animation: logo-fade-in 5s linear;
       height: 20vmin;
+      padding: 0 20px;
     }
 
     a {
