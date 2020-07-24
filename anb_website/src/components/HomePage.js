@@ -65,6 +65,30 @@ export default function HomePage(props) {
             </p>
           </div>
         </div>
+        <div className="content-holder">
+          <div className="about-text">
+            <h2>More:</h2>
+            <p>You can check out Ben featured on the following podcasts:</p>
+            <iframe
+              title="Herp Network Podcast"
+              src="https://open.spotify.com/embed-podcast/episode/6vrWxtaOQWtvVeZvjotUgW"
+              width="100%"
+              height="232"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            />
+            <iframe
+              title="MPR Podcast"
+              src="https://open.spotify.com/embed-podcast/episode/0TCcvlqGLRXsO02gsKa4ck"
+              width="100%"
+              height="232"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            />
+          </div>
+        </div>
       </div>
     </Home>
   );
