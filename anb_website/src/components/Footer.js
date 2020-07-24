@@ -26,7 +26,7 @@ export default function Footer(props) {
           scrolling="no"
           style={{
             width: "100%",
-            height: "100vw"
+            height: "100vw",
           }}
         />
 
@@ -39,7 +39,7 @@ export default function Footer(props) {
           scrolling="no"
           style={{
             width: "100%",
-            height: "160vw"
+            height: "160vw",
           }}
         />
 
@@ -52,7 +52,7 @@ export default function Footer(props) {
           scrolling="no"
           style={{
             width: "100%",
-            height: "100vw"
+            height: "100vw",
           }}
         />
       </div>
@@ -66,6 +66,10 @@ const FooterBox = styled.div`
     /* width: 50%; */
     font-size: calc(16px + 2vmin);
     padding-top: calc(5px + 3vmin);
+  }
+
+  p {
+    margin-bottom: 20px;
   }
 
   .snap-widget-holder {
