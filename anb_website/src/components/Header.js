@@ -16,15 +16,15 @@ export default function Header(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="social insta_logo" src={insta_logo} alt="instagram" />
+          <img className="social" src={insta_logo} alt="instagram" />
         </a>
         <a
-          className="social insta_logo"
+          className="social fb_logo"
           href="https://www.facebook.com/AnBReptiles/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="social fb_logo" src={fb_logo} alt="facebook" />
+          <img className="social" src={fb_logo} alt="facebook" />
         </a>
         <nav>
           <NavLink exact to="/">
@@ -60,8 +60,7 @@ const StyledHeader = styled.header`
 
     .social {
       height: calc(30px + 1vmin);
-      position: fixed;
-      top: calc(10px + 1vmin);
+
       cursor: pointer;
 
       img {
@@ -73,9 +72,13 @@ const StyledHeader = styled.header`
     }
 
     .fb_logo {
+      position: fixed;
+      top: calc(10px + 1vmin);
       right: calc(20px + 5vw);
     }
     .insta_logo {
+      position: fixed;
+      top: calc(10px + 1vmin);
       left: calc(20px + 5vw);
     }
 
