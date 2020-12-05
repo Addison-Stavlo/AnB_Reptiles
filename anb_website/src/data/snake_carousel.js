@@ -1,4 +1,4 @@
-import caramel_jag from "../images/snakes/caramel_jag_600.jpg";
+import caramel_jag from "../images/snakes/carmel_jag_2020_600.jpg";
 import donk_picky from "../images/snakes/donk_picky_600.jpg";
 import jungle3 from "../images/snakes/postings/Jungle2020_600.jpg";
 import bredli from "../images/snakes/stripedBredliHatchling_600.jpg";

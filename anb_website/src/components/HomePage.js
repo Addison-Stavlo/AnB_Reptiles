@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import headlineImage from "../images/snakes/blossoms_and_snake.jpg";
+import headlineImage from "../images/snakes/carmel_2020_banner.jpg";
 import Carousel from "../components/carousel/Carousel";
 import peoplePics from "../data/about_images";
 import snakePics from "../data/snake_carousel";
