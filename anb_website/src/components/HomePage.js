@@ -12,11 +12,11 @@ export default function HomePage(props) {
 
   return (
     <Home>
-      <div className="headline">
+      <figure className="headline">
         <p>Welcome to our Homepage!</p>
         <img src={headlineImage} alt="headline snake" />
-      </div>
-      <div className="about">
+      </figure>
+      <section className="about">
         <div className="content-holder">
           <div className="about-text">
             <h2>About Us:</h2>
@@ -89,12 +89,12 @@ export default function HomePage(props) {
             />
           </div>
         </div>
-      </div>
+      </section>
     </Home>
   );
 }
 
-const Home = styled.div`
+const Home = styled.main`
   .headline {
     position: relative;
     width: 100%;
