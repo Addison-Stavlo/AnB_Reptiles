@@ -26,18 +26,20 @@ export default function Header(props) {
         >
           <img className="social fb_logo" src={fb_logo} alt="facebook" />
         </a>
-        <NavLink exact to="/">
-          Home
-        </NavLink>
+        <nav>
+          <NavLink exact to="/">
+            Home
+          </NavLink>
 
-        <img src={logo} alt="logo" className="anb_logo" />
-        <NavLink to="/shop">Shop</NavLink>
+          <img src={logo} alt="logo" className="anb_logo" />
+          <NavLink to="/shop">Shop</NavLink>
+        </nav>
       </div>
     </StyledHeader>
   );
 }
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   margin-bottom: 15vmin;
 
   div {
@@ -90,6 +92,12 @@ const StyledHeader = styled.div`
 
     .active {
       text-decoration: underline;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 `;

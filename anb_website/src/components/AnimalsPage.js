@@ -10,7 +10,7 @@ export default function AnimalsPage(props) {
 
   return (
     <PageHolder>
-      <div className="sales-note">
+      <section className="sales-note">
         <h2>Sales note:</h2>
         <p>
           While we are concerned with your convenience, AnB Reptiles does not
@@ -21,18 +21,20 @@ export default function AnimalsPage(props) {
           conditions. Once a deal is agreed upon, payments can be made through
           PayPal. Average shipping and handling costs are around $50.
         </p>
-      </div>
-      <h1>Our Available Animals</h1>
-      <div className="sales-shelf">
-        {saleItems.map((item, index) => (
-          <SaleItem animal={item} index={index} />
-        ))}
-      </div>
+      </section>
+      <section>
+        <h1>Our Available Animals</h1>
+        <div className="sales-shelf">
+          {saleItems.map((item, index) => (
+            <SaleItem animal={item} index={index} />
+          ))}
+        </div>
+      </section>
     </PageHolder>
   );
 }
 
-const PageHolder = styled.div`
+const PageHolder = styled.main`
   background: #d1d4c7;
   padding-top: 50px;
 

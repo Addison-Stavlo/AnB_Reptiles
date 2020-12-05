@@ -40,7 +40,7 @@ function SaleItem(props) {
 
 export default withRouter(SaleItem);
 
-const SaleCard = styled.div`
+const SaleCard = styled.article`
   min-height: 400px;
   background: rgba(50, 50, 50, 1);
   border-radius: 10px;

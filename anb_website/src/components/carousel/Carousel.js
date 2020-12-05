@@ -42,7 +42,7 @@ export default class Carousel extends React.Component {
   }
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.figure`
   width: 300px;
   height: 100%;
   display: flex;

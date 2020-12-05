@@ -60,7 +60,7 @@ export default function Footer(props) {
   );
 }
 
-const FooterBox = styled.div`
+const FooterBox = styled.footer`
   color: rgb(230, 230, 230);
   h2 {
     /* width: 50%; */
