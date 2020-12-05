@@ -24,12 +24,15 @@ function SaleItem(props) {
         <h3>Date Hatched: {dob}</h3>
         <h3>Sex: {sex}</h3>
         <h3>${price} + shipping</h3>
-        <h3 className="view-more">Click for More Info!</h3>
+
+        <button className="view-more">Click for More Info!</button>
+
         <a
           href="http://m.me/AnBReptiles"
           target="_blank"
           rel="noopener noreferrer"
           onClick={ev => ev.stopPropagation()}
+          className="facebook-link"
         >
           Interested? <br /> Message Us on Facebook
         </a>
@@ -78,9 +81,17 @@ const SaleCard = styled.article`
   .view-more {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    margin: 5px auto;
+    width: 99%;
+    background: inherit;
+    border: none;
+    color: white;
   }
 
-  a {
+  .facebook-link {
     margin: 0 auto;
     padding: 10px;
     color: white;
