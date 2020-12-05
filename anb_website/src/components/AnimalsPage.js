@@ -34,6 +34,7 @@ export default function AnimalsPage(props) {
 
 const PageHolder = styled.div`
   background: #d1d4c7;
+  padding-top: 50px;
 
   .sales-note {
     h2 {
