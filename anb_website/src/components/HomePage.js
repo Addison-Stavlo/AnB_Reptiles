@@ -121,7 +121,8 @@ const Home = styled.main`
   }
 
   .about {
-    background: #d1d4c7;
+    /* background: #d1d4c7;  */
+    background-color: rgb(15,15,15);
 
     .content-holder {
       padding: 30px 30px 0;
@@ -133,7 +134,8 @@ const Home = styled.main`
       margin: 0 auto;
 
       .about-text {
-        color: rgb(30, 30, 30);
+        /* color: rgb(30, 30, 30); */
+        color: rgb( 200,200,200 );
         text-align: left;
         width: 55%;
         max-width: 800px;
