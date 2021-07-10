@@ -35,8 +35,10 @@ export default function AnimalsPage(props) {
 }
 
 const PageHolder = styled.main`
-  background: #d1d4c7;
+  /* background: #d1d4c7; */
+  background-color: rgb( 15,15,15 );
   padding-top: 50px;
+  color: rgb(200,200,200);
 
   .sales-note {
     h2 {

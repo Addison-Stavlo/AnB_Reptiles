@@ -53,7 +53,9 @@ export default function ItemPage(props) {
 }
 
 const PageWrapper = styled.main`
-  background: #d1d4c7;
+  /* background: #d1d4c7; */
+  background-color: rgb( 15,15,15 );
+  color: rgb( 200,200,200 );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +88,7 @@ const PageWrapper = styled.main`
     padding: 10px;
     color: white;
     display: block;
-    background: rgb(25, 25, 25);
+    background: rgb(0,0,0);
     width: 200px;
     border-radius: 10px;
     text-decoration: none;

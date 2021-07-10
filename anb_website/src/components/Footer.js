@@ -62,6 +62,7 @@ export default function Footer(props) {
 
 const FooterBox = styled.footer`
   color: rgb(230, 230, 230);
+  background-color: rgb( 0,0,0 );
   h2 {
     /* width: 50%; */
     font-size: calc(16px + 2vmin);

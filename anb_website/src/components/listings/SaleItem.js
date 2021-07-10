@@ -96,7 +96,7 @@ const SaleCard = styled.article`
     padding: 10px;
     color: white;
     /* display: block; */
-    background: rgb(25, 25, 25);
+    background: rgb(0,0,0);
     width: 80%;
     border-radius: 10px;
     text-decoration: none;
