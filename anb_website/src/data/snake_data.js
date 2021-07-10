@@ -77,7 +77,7 @@ const jungle2020 = new SaleItem(
   "Jungle Carpet Python",
   "2020-6-2",
   "Both available",
-  250,
+  350,
   [picky, donk],
   "2020 Jungles"
 );
@@ -89,7 +89,7 @@ const bredliHetStripe = new SaleItem(
   "Bredli (het Stripe)",
   "2020-8-6",
   "Both available",
-  250,
+  300,
   [bradley, stripedSire],
   "2020 Bredlis"
 );
